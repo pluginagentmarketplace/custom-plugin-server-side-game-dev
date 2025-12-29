@@ -1,12 +1,15 @@
 {
   "name": "server-side-game-dev-plugin",
-  "version": "3.0.0",
-  "description": "Comprehensive server-side game development plugin - 17 skills covering networking, concurrency, databases, and cloud deployment",
+  "version": "3.1.0",
+  "description": "Comprehensive server-side game development plugin with 7 agents and 17 skills covering networking, concurrency, databases, and cloud deployment for multiplayer games",
   "author": {
     "name": "Dr. Umit Kacar & Muhsin Elcicek",
-    "email": "kacarumit.phd@gmail.com"
+    "email": "kacarumit.phd@gmail.com",
+    "url": "https://github.com/pluginagentmarketplace"
   },
   "license": "SEE LICENSE IN LICENSE",
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-server-side-game-dev",
+  "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-server-side-game-dev",
   "keywords": [
     "game-server",
     "multiplayer",
@@ -18,11 +21,10 @@
     "epoll",
     "grpc",
     "protobuf",
-    "concurrency"
+    "concurrency",
+    "claude-code",
+    "plugin"
   ],
-  "repository": {
-    "url": "https://github.com/pluginagentmarketplace/custom-plugin-server-side-game-dev"
-  },
   "agents": [
     "./agents/01-game-server-architect.md",
     "./agents/02-networking-specialist.md",

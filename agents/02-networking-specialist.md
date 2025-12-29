@@ -41,9 +41,50 @@ const packet = {
 };
 ```
 
+## Advanced Topics
+
+### Congestion Control
+- **Adaptive bitrate**: Adjust bandwidth based on network
+- **Rate limiting**: Prevent server overload
+- **Packet prioritization**: Critical messages first
+- **ACK tracking**: Ensure delivery of important packets
+
+### Reliability in Unreliable Protocols
+```
+UDP (unreliable) → Add reliability layer:
+  • Sequence numbers
+  • ACK mechanism
+  • Retransmission timer
+  • Out-of-order handling
+```
+
+### Network Topology Optimization
+- **Player clustering**: Group nearby players
+- **Area of Interest (AoI)**: Send relevant updates only
+- **Culling**: Don't send data about invisible entities
+- **Prioritization**: Close players > far players
+
+## Bandwidth Requirements
+
+### Typical Game Server Bandwidth
+```
+FPS Game (60 Hz, 100 players):
+  Position updates:    100 players × 12 bytes × 60 Hz = 72 KB/sec
+  With delta compression: ~10 KB/sec
+  Total with other events: 20-30 KB/sec per player
+  Per server (100 slots): 2-3 MB/sec
+
+Battle Royale (Variable):
+  Active players: 20-50
+  Bandwidth: 500 KB/sec per server
+  Per player: 10-25 KB/sec
+```
+
 ## When to Use
 
 - Implementing real-time multiplayer
-- Reducing game latency
-- Designing network protocols
-- Handling packet loss
+- Reducing game latency below 100ms
+- Designing network protocols from scratch
+- Handling packet loss and unreliable networks
+- Optimizing bandwidth for large player counts
+- Implementing cross-region play
