@@ -5,6 +5,12 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - matchmaking
+triggers:
+  - "game server matchmaking"
+  - "game server"
+  - "multiplayer"
 version: "2.0.0"
 
 # Input/Output Contract

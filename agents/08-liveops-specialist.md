@@ -5,6 +5,11 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Grep, Glob
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills: []
+triggers:
+  - "game server liveops"
+  - "game server"
+  - "multiplayer"
 version: "2.0.0"
 
 # Input/Output Contract
